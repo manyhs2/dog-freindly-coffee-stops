@@ -23,6 +23,7 @@
   <body class="detail-page">
     <nav>
       <section class="brand">
+        <h2 class="visually-hidden">Brand</h2>
         <img
           class="logo nav-logo"
           src="img/logo-main.png"
@@ -36,7 +37,24 @@
         <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="visually-hidden"
+      aria-hidden="true"
+    />
+    <label for="menu-toggle" class="menu-button" aria-label="Open menu"></label>
+    <aside class="menu-overlay" aria-label="Mobile menu">
+      <nav class="mobile-menu" aria-label="Mobile">
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="detail.html">View cafe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
     <section id="hero">
+      <h2 class="visually-hidden">Hero image</h2>
       <img
         class="hero-img"
         src="img/hero-detail.png"
@@ -46,16 +64,27 @@
     </section>
 
     <main class="detail-page" id="detail">
+      <h1 class="visually-hidden">Access Café Haarlem — Details</h1>
       <article class="cafe-article">
+        <h2 class="visually-hidden">Access Café Haarlem — article</h2>
+
         <section class="detail-header">
+          <h2 class="visually-hidden">Header</h2>
           <section class="container">
-            <h1 class="detail-title">Access Café Haarlem</h1>
-            <h2 class="subtitle">welcoming for every guest and service dog!</h2>
+            <h3 class="visually-hidden">Header container</h3>
+
+            <h2 class="detail-title">Access Café Haarlem</h2>
+            <h3 class="subtitle">welcoming for every guest and service dog!</h3>
           </section>
         </section>
 
         <section class="detail-logos">
+          <h2 class="visually-hidden">Key features</h2>
+
+          <h2 class="visually-hidden">Key features</h2>
           <section class="container">
+            <h3 class="visually-hidden">Features container</h3>
+
             <ul class="logo-row detail-logo-row">
               <li>
                 <img
@@ -98,7 +127,11 @@
         </section>
 
         <section class="detail-description">
+          <h2 class="visually-hidden">Description</h2>
+
           <section class="container">
+            <h3 class="visually-hidden">Description container</h3>
+
             <p class="detail-copy">
               Some guests and their service dogs need a little extra care — and
               that's exactly what we're here for. At Access Cafe Haarlem, every
@@ -110,8 +143,13 @@
         </section>
 
         <section class="detail-gallery">
+          <h2 class="visually-hidden">Gallery</h2>
           <section class="container">
+            <h3 class="visually-hidden">Gallery container</h3>
+
             <section class="gallery-row gallery-grid">
+              <h3 class="visually-hidden">Images</h3>
+
               <figure class="gallery-figure">
                 <img
                   src="img/detail-gallery-1.png"
@@ -138,9 +176,46 @@
         </section>
       </article>
     </main>
+
+    <aside class="is-hidden" hidden>
+      <figure class="float-invisible">
+        <img src="img/badge-central-haarlem.png" alt="Badge" />
+      </figure>
+      <table class="striped-table-invisible">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Entrance</td>
+            <td>Step-free</td>
+          </tr>
+          <tr>
+            <td>Water bowls</td>
+            <td>Available</td>
+          </tr>
+          <tr>
+            <td>Quiet area</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>Staff</td>
+            <td>Caring &amp; trained</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+
     <footer>
       <section class="footer-wrap">
+        <h2 class="visually-hidden">Footer</h2>
+
         <section class="footer-brand">
+          <h3 class="visually-hidden">Brand</h3>
+
           <img
             class="logo footer-logo"
             src="img/logo-main.png"
@@ -155,6 +230,7 @@
         </ul>
 
         <section class="footer-bottom">
+          <h3 class="visually-hidden">Legal</h3>
           <p>&copy; 2025 Dog-Friendly Haarlem. All Rights Reserved.</p>
         </section>
       </section>

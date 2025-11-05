@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Poppins:wght@600;700a&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Poppins:wght@600;700&amp;display=swap"
       rel="stylesheet"
     />
     <title>Dog-Friendly Haarlem</title>
@@ -23,6 +23,8 @@
   <body class="contact-page">
     <nav>
       <section class="brand">
+        <h2 class="visually-hidden">Brand</h2>
+
         <img
           class="logo nav-logo"
           src="img/logo-main.png"
@@ -32,10 +34,26 @@
       </section>
       <ul class="nav-links">
         <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="detail.html">View Cafe</a></li>
+        <li><a class="nav-link" href="detail.html">View cafe</a></li>
         <li><a class="nav-link" href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <input
+      type="checkbox"
+      id="menu-toggle"
+      class="visually-hidden"
+      aria-hidden="true"
+    />
+    <label for="menu-toggle" class="menu-button" aria-label="Open menu"></label>
+    <aside class="menu-overlay" aria-label="Mobile menu">
+      <nav class="mobile-menu" aria-label="Mobile">
+        <ul class="mobile-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="detail.html">View cafe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
     <main class="contact-container" id="contact">
       <h1 class="contact-title">Contact Us</h1>
       <p class="contact-subtitle">
@@ -43,6 +61,8 @@
         a friendly bark!
       </p>
       <section class="contact-canvas contact-grid">
+        <h2 class="visually-hidden">Contact content</h2>
+
         <img
           class="contact-image contact-illustration"
           src="img/contact-illustration.png"
@@ -51,6 +71,8 @@
         />
 
         <section class="contact-frame" aria-labelledby="contact-form-legend">
+          <h3 class="visually-hidden">Contact form</h3>
+
           <form class="contact-form" action="#" method="post" novalidate>
             <fieldset>
               <legend id="contact-form-legend">Contact form</legend>
@@ -111,7 +133,11 @@
     </main>
     <footer>
       <section class="footer-wrap">
+        <h2 class="visually-hidden">Footer</h2>
+
         <section class="footer-brand">
+          <h3 class="visually-hidden">Brand</h3>
+
           <img
             class="logo footer-logo"
             src="img/logo-main.png"
@@ -126,6 +152,8 @@
         </ul>
 
         <section class="footer-bottom">
+          <h3 class="visually-hidden">Legal</h3>
+
           <p>&copy; 2025 Dog-Friendly Haarlem. All Rights Reserved.</p>
         </section>
       </section>
