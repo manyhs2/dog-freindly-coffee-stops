@@ -510,6 +510,31 @@ select:focus-visible {
 		height: 200px;
 		object-fit: cover;
 	}
+	.detail-logo-row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+		gap: 28px;
+		justify-items: center;
+		text-align: center;
+	}
+
+	.detail-logo-row li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.detail-logo-img {
+		width: clamp(96px, 22vw, 140px);
+		height: auto;
+		object-fit: contain;
+		margin: 0 auto 8px;
+	}
+
+	.detail-logo-text {
+		font-size: clamp(14px, 3.6vw, 18px);
+		line-height: 1.3;
+	}
 }
 
 @media (max-width: 768px) {
@@ -604,6 +629,19 @@ select:focus-visible {
 	.cookie-accept.viewBtn {
 		width: 100%;
 		max-width: 320px;
+	}
+}
+
+@media (max-width: 480px) {
+	.detail-logo-row {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 18px;
+	}
+	.detail-logo-img {
+		width: clamp(80px, 28vw, 120px);
+	}
+	.detail-logo-text {
+		font-size: 14px;
 	}
 }
 
